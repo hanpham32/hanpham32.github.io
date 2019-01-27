@@ -1,0 +1,138 @@
+body{
+	font-family: Arial;
+  margin: 0;
+  max-width: 100%;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a{
+	float:left;
+	display: inline-block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  width: 10%;
+}
+
+.topnav a:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+.content{
+	background-color: #ddd;
+	padding: 20px;
+}
+
+
+.item1{ grid-area: image;}
+.item2{ grid-area: about; width: 70%;}
+.grid-container{
+	display: grid;
+	grid-template-areas:
+		'image about';
+	grid-gap: 10px;
+
+}
+
+.footer{
+	background-color: #f1f1f1;
+	padding: 10px;
+}
+
+.social-container {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  height: 36px;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  font-size: 24px;
+  margin: 8px;
+}
+.social-container .social-cube{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all 0.333s;
+  -webkit-transform: translateZ(-18px);
+          transform: translateZ(-18px);
+}
+.social-container .social-cube .front, .social-container .social-cube .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.social-container .social-cube .front {
+  -webkit-transform: rotateX(0deg) translateZ(18px);
+          transform: rotateX(0deg) translateZ(18px);
+}
+.social-container .social-cube .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(18px);
+          transform: rotateX(-90deg) translateZ(18px);
+}
+.social-container:hover .social-cube {
+  -webkit-transform: translateZ(-18px) rotateX(90deg);
+          transform: translateZ(-18px) rotateX(90deg);
+}
+
+.social-container.facebook .social-cube .front{
+  background: #3b5998;
+}
+.social-container.facebook .social-cube .bottom {
+  background: #2d4373;
+}
+.social-container.facebook:hover .social-cube .bottom {
+  background: #3b5998;
+}
+.social-container.facebook:hover .social-cube .front {
+  background: #4c70ba;
+}
+
+.social-container.instagram .social-cube .front{
+	background: #FF7373;
+}
+
+.social-container.instagram .social-cube .bottom{
+	background: #e56767;
+}
+
+.social-container.instagram:hover .social-cube .bottom{
+	background: #FF7373;
+}
+
+.social-container.instagram:hover .social-cube .front{
+	background: #ff8181;
+}
+
+.social-container.twitter .social-cube .front{
+	background: #53BCDF;
+}
+
+.social-container.twitter .social-cube .bottom{
+	background: #4aa9c8;
+}
+
+.social-container.twitter:hover .social-cube .front{
+	background: #53bcdf;
+}
+
+.social-container.twitter:hover .social-cube .bottom{
+	background: #4aa9c8;
+}
+
