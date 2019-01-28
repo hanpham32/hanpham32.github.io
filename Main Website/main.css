@@ -136,3 +136,20 @@ body{
 	background: #4aa9c8;
 }
 
+@media (max-width:415px) { 
+  .topnav a{
+    width: 15%;
+  }
+  body .center-text {
+    text-align: center;
+  }
+
+  .grid-container{
+    align-content: center;
+    display: grid;
+    grid-template-areas:
+      'image'
+      'about';
+    grid-gap: 10px;
+  }
+}
