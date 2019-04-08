@@ -11,7 +11,7 @@ body{
 
 .topnav a{
 	float:left;
-	display: inline-block;
+	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
@@ -26,7 +26,6 @@ body{
 
 .content{
 	background-color: #ddd;
-  background-size: ;
 	padding: 20px;
 }
 
