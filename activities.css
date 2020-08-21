@@ -1,0 +1,48 @@
+.block{
+	display: inline-flex;
+	padding-left: 50px;
+
+}
+
+.item1{ 
+	grid-area: image;
+	padding: 10px, 0;
+}
+.item2{
+	grid-area: description;
+	width: 80%;
+	text-align: center;
+}
+
+.content{
+	overflow: hidden;
+}
+
+.grid-container{
+	float: left;
+	display: inline-grid;
+	grid-template-areas: 
+		'image'
+		'description';
+	grid-gap: 0px;
+
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+.grid-container:hover{
+	background-color: #ecf0f1;
+	font-weight: bold;	
+}
+
+
+.grid-container img{
+	margin: 0px;
+	padding: 20px;
+	height: 150px;
+	width: 150px;
+	border-radius: 5px;
+}
+
+
