@@ -1,7 +1,11 @@
 .block{
 	display: inline-flex;
 	padding-left: 50px;
+	text-align: center;
+}
 
+.block a {
+	color: black;
 }
 
 .item1{ 
@@ -10,8 +14,7 @@
 }
 .item2{
 	grid-area: description;
-	width: 80%;
-	text-align: center;
+	width: 100%;
 }
 
 .content{
