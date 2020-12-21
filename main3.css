@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1f2022;
+	width: 95%;
+	margin: 0;
+	overflow: hidden;
+}
+
+header {
+	padding-top: 10px;
+	width: 89%;
+}
+
+.nav-links {
+	list-style: none;
+	float: right;
+	display: flex;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #8B8C8D;
+	font-size: 24px;
+	margin: 25px; 
+	cursor: pointer;
+}
+
+main {
+	margin-top: 219px;
+	margin-left: 212px;
+	position: relative;
+}
+
+h1 {
+	font-size: 64px;
+	color: #FFFFFF;
+}
+
+.column {
+	width: 50%;
+	float: left;
+}
+
+#greet p {
+	text-align: left;
+	font-size: 30px;
+	color: #8B8C8D;
+	width: 556px;
+}
+
+#button {
+	margin-top: 30px;
+	background-color: #0EAF66; 
+	text-decoration: none; 
+	font-size: 30px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 40px;
+	width: 264px;
+}
+
+#button span {
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+
+}
+
+#outer {
+	background-color: #191A1C;
+	width: 432px;
+	height: 527px;
+	border-radius: 10px;
+}
+
+#ProfilePic {
+	width: 350px;
+	height: 448px;
+	border-radius: 5px;
+	margin: 10%;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
