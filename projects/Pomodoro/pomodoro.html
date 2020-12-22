@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Pomodoro</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Poppins">
+</head>	
+<body ng-app="myApp">
+	<nav>
+		<h3>Pomodoro</h3>
+	</nav>
+	<div class="container">
+		<div id="status" ng-controller="myCtrl">{{status}}</div>
+		<div id="timer" ng-controller="myCtrl1">{{timer}}</div>
+		<button>Start</button>
+		<button>Pause</button>
+		<div id="custom">
+			<h2 class="child"> Customize Session</h2>
+			<div>
+				<p class="child">Break time</p>
+				<p class="child">Study time</p>
+				<p class="child">Repeat</p>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html> 
