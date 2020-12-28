@@ -1,9 +1,13 @@
 var app = angular.module('myApp', []);
+function switchToWork() {
+	app.controller('myCtrl', function($scope) {
+		$scope.status = "Work Session";
+	});
+}
+function switchToRest() {
+	app.controller('myCtrl', function($scope) {
+		$scope.status = "Rest Session";
+	});
+}
 
-app.controller('myCtrl', function($scope) {
-	$scope.status = "Work Session";
-});
-
-app.controller('myCtrl1', function($scope) {
-	$scope.timer = "30:00";
-});
+switchToWork();

@@ -26,6 +26,35 @@ nav {
 	font-size: 72px;
 	letter-spacing: 2px;
 }
+#custom {
+	margin: 0;
+	padding: 0;
+}
+
+.box1 {
+	padding-left: 700px;
+	width: 48%;
+}
+.box2 {
+	padding-left: 10px;
+	padding-right: 900px;
+	padding-top: 5px;
+	width: 52%;
+}
+
+input, input:focus, textarea:focus {
+	width: 81px;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+}
+
+.box1, .box2{
+	box-sizing: border-box;
+	float: left;
+	/* width: 50%; */
+	height: 80px;
+}
 
 .child {
 	text-align: left;
@@ -33,7 +62,7 @@ nav {
 	line-height: 8px;
 }
 
-button {
+.btn1 {
 	margin-right: 37px;
 	cursor: pointer;
 	pointer-events: auto;
@@ -44,6 +73,22 @@ button {
 	border-radius: 50px;
 	border: none;
 	outline: none;
+}
+
+.btn2 {
+	position: relative;
+	margin-top: 10px;
+	/* margin-right: 37px; */
+	cursor: pointer;
+	pointer-events: auto;
+	color: #EEEEEE;
+	width: 67px;
+	height: 25px;
+	background-color: #393E46;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	left: 15px;
 }
 
 button:active {

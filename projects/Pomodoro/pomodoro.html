@@ -14,17 +14,30 @@
 	</nav>
 	<div class="container">
 		<div id="status" ng-controller="myCtrl">{{status}}</div>
-		<div id="timer" ng-controller="myCtrl1">{{timer}}</div>
-		<button>Start</button>
-		<button>Pause</button>
-		<div id="custom">
-			<h2 class="child"> Customize Session</h2>
-			<div>
-				<p class="child">Break time</p>
-				<p class="child">Study time</p>
-				<p class="child">Repeat</p>
+		<div id="timer">
+			<div id="hour">
+				{{hour}}
+			</div>
+			<div id="minute">
+				{{minute}}
 			</div>
 		</div>
+		<button class="btn1">Start</button>
+		<button class="btn1">Pause</button>
+		<h2> Customize Session</h2>
+		<div id="custom">
+			<div class="box1">
+				<p class="child">Break time</p>
+				<p class="child">Study time</p>
+				<p class="child">Repeat</p>					
+			</div>
+			<div class="box2">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+			</div>
+		</div>
+		<button class="btn2">Apply</button>
 	</div>
 	<script src="script.js"></script>
 </body>
