@@ -9,5 +9,14 @@ function switchToRest() {
 		$scope.status = "Rest Session";
 	});
 }
+var breakTime, studyTime, repeatTime;
 
+$(".btn2").click(function() {
+	breakTime = $("#breakTime").val();
+});
+
+// function saveSetting() {
+	
+// }
+console.log(breakTime);
 switchToWork();
