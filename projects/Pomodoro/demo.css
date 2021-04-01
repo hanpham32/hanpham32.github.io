@@ -1,0 +1,27 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #FFD472;
+	color: #393E46;
+	overflow: hidden;
+
+}
+
+.wrap {
+	/*display: flex;*/
+	/*justify-content: center;*/
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.wrap > h2 {
+	text-align: center;
+	display: inline-block;
+	font-size: 72px;
+	white-space: nowrap;
+}
