@@ -8,6 +8,10 @@ body {
 
 }
 
+.Title {
+	padding-left: 30px;
+}
+
 .wrap {
 	/*display: flex;*/
 	/*justify-content: center;*/
@@ -16,6 +20,8 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    align-content: center;
+
 
 }
 
@@ -24,4 +30,26 @@ body {
 	display: inline-block;
 	font-size: 72px;
 	white-space: nowrap;
+	/*padding: 0;*/
+	margin: 0;
+}
+
+button{
+	display: block;
+	position: absolute;
+	left: 20%;
+	margin: 0 0.9%;
+	cursor: pointer;
+	pointer-events: auto;
+	color: #EEEEEE;
+	width: 125px;
+	height: 50px;
+	background-color: #393E46;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+}
+
+button:active {
+	transform: scale(1.05);	/*background-color: #8d743f;*/
 }
