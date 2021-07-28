@@ -91,16 +91,16 @@ body{
           transform: translateZ(-18px) rotateX(90deg);
 }
 
-.social-container.facebook .social-cube .front{
+.social-container.linkedin .social-cube .front{
   background: #3b5998;
 }
-.social-container.facebook .social-cube .bottom {
+.social-container.linkedin .social-cube .bottom {
   background: #2d4373;
 }
-.social-container.facebook:hover .social-cube .bottom {
+.social-container.linkedin:hover .social-cube .bottom {
   background: #3b5998;
 }
-.social-container.facebook:hover .social-cube .front {
+.social-container.linkedin:hover .social-cube .front {
   background: #4c70ba;
 }
 
@@ -118,22 +118,6 @@ body{
 
 .social-container.instagram:hover .social-cube .front{
 	background: #ff8181;
-}
-
-.social-container.twitter .social-cube .front{
-	background: #53BCDF;
-}
-
-.social-container.twitter .social-cube .bottom{
-	background: #4aa9c8;
-}
-
-.social-container.twitter:hover .social-cube .front{
-	background: #53bcdf;
-}
-
-.social-container.twitter:hover .social-cube .bottom{
-	background: #4aa9c8;
 }
 
 .social-container.github .social-cube .front{
