@@ -5,20 +5,23 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: #1f2022;
-	width: 95%;
+	height: 100%;
 	margin: 0;
-	overflow: hidden;
 }
 
 header {
 	padding-top: 10px;
-	width: 89%;
+	width: 100%;
+}
+
+nav {
+	margin-right: 150px;
 }
 
 .nav-links {
 	list-style: none;
 	float: right;
-	display: flex;
+	display: inline-flex;
 }
 
 .nav-link {
@@ -29,9 +32,13 @@ header {
 	cursor: pointer;
 }
 
+.nav-link:hover {
+	color: #c6c7c8;
+}
+
 main {
 	margin-top: 219px;
-	margin-left: 212px;
+	margin: 15%;
 	position: relative;
 }
 
@@ -41,8 +48,9 @@ h1 {
 }
 
 .column {
-	width: 50%;
+	/*width: 50%;*/
 	float: left;
+	min-width: 50%;
 }
 
 #greet p {
@@ -90,3 +98,81 @@ h1 {
     width: 100%;
   }
 }
+
+.social-container {
+	position: ;
+	display: inline-block;
+	width: 180px;
+	height: 36px;
+	-webkit-perspective: 300px;
+			perspective: 300px;
+	font-size: 24px;
+	margin-right: 8px;
+  }
+  .social-container .social-cube{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	transition: all 0.333s;
+	-webkit-transform: translateZ(-18px);
+			transform: translateZ(-18px);
+  }
+  .social-container .social-cube .front, .social-container .social-cube .bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+  }
+  .social-container .social-cube .front {
+	-webkit-transform: rotateX(0deg) translateZ(18px);
+			transform: rotateX(0deg) translateZ(18px);
+  }
+  .social-container .social-cube .bottom {
+	-webkit-transform: rotateX(-90deg) translateZ(18px);
+			transform: rotateX(-90deg) translateZ(18px);
+  }
+  .social-container:hover .social-cube {
+	-webkit-transform: translateZ(-18px) rotateX(90deg);
+			transform: translateZ(-18px) rotateX(90deg);
+  }
+
+  .social-container.github .social-cube .front{
+	background: #9b59b6;
+  }
+  
+  .social-container.github .social-cube .bottom{
+	background: #8e44ad;
+  }
+  
+  .social-container.github:hover .social-cube .front{
+	background: #9b59b6;
+  }
+  
+  .social-container.github:hover .social-cube .bottom{
+	background: #8e44ad;
+  }
+
+  .social-container.linkedin .social-cube .front{
+	background: #0064bf;
+  }
+  
+  .social-container.linkedin .social-cube .bottom{
+	background: #0056a1;
+  }
+  
+  .social-container.linkedin:hover .social-cube .front{
+	background: #0064bf;
+  }
+  
+  .social-container.linkedin:hover .social-cube .bottom{
+	background: #0056a1;
+  }
