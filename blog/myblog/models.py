@@ -5,7 +5,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     title_tag = models.CharField(max_length=255, default='')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+    preview = models.CharField(max_length=255, default='')
     body = models.TextField()
 
     def __str__(self):
-        return self.title + ' | ' + str(self.author)
+        return self.title

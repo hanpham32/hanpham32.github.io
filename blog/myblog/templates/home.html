@@ -7,11 +7,13 @@
 {% block content %}
 
 <h1>Recent Posts</h1>
-
+<hr>
 <ul>
 {% for post in object_list %}
-    <li> <a href="{% url 'article-detail' post.pk%}"> {{ post.title }} </a> - {{ post.author }} <br/>
-    {{ post.body }} </li>
+    <li> 
+        <a href="{% url 'article-detail' post.pk%}"> {{ post.title }} </a><br/>
+        Description: {{ post.preview }}
+    </li>
 {% endfor %}
 
 </ul>
