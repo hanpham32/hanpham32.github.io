@@ -63,18 +63,12 @@ h1 {
 	width: 556px;
 }
 
-#outer {
-	background-color: #191A1C;
-	width: 432px;
-	height: 527px;
-	border-radius: 10px;
-}
 
 #ProfilePic {
-	width: 350px;
-	height: 448px;
-	border-radius: 5px;
-	margin: 10%;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-top: 160px;
 }
 
 .social-container {
