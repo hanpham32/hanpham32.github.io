@@ -35,14 +35,15 @@ nav {
 	color: #c6c7c8;
 }
 
-.icon{
+.dropdown-panel{
 	display: none;
 }
 
 main {
 	margin-top: 5px;
-	padding-left: 20%;
 	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 h1 {
@@ -51,9 +52,8 @@ h1 {
 }
 
 .column{
-	float: left;
-	min-width: 35%;
 	margin: 2em;
+	justify-content: center;
 }
 
 #greet p {
@@ -68,7 +68,7 @@ h1 {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
-	margin-top: 160px;
+	margin-top: 80px;
 }
 
 .social-container {
@@ -79,7 +79,7 @@ h1 {
 			perspective: 300px;
 	font-size: 24px;
 	margin-right: 8px;
-	}
+}
 .social-container .social-cube{
 position: absolute;
 left: 0;
@@ -148,6 +148,43 @@ background: #0064bf;
 background: #0056a1;
 }
 
-@media only screen and (min-width: 600px) {
-	
+
+
+@media only screen and (max-width: 800px) {
+	#ProfilePic {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	header{
+		display: flex;
+		justify-content: flex-end;
+		height: 20px;
+		padding-top: 0px;
+		padding-right: 50px;
+	}
+	h1 {
+		font-size: 34px;
+		color: #FFFFFF;
+	}
+
+	#greet p {
+		text-align: left;
+		font-size: 15px;
+		color: #8B8C8D;
+		width: 80%;
+	}
+
+	.column.two {
+		display: none;
+	}
+
+	.social-container {
+		display: none;
+	}
+
+	nav {
+		display: none;
+	}
 }
