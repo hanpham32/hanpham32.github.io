@@ -31,8 +31,12 @@ nav {
 	cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:active {
 	color: #c6c7c8;
+}
+.nav-link:focus {
+	color: #8B8C8D;
+	text-decoration: none;
 }
 
 .dropdown-panel{
