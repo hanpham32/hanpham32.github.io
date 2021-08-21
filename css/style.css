@@ -42,6 +42,10 @@ nav {
 main {
 	margin-top: 5px;
 	position: relative;
+}
+
+.content {
+	
 	display: flex;
 	justify-content: center;
 }
@@ -69,6 +73,26 @@ h1 {
 	height: 250px;
 	border-radius: 50%;
 	margin-top: 80px;
+}
+
+
+hr {
+	width: 900px;
+	height: 1px;
+	margin-top: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #8B8C8D;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	/* letter-spacing: 0.2em; */
+}
+
+footer a:hover {
+	text-decoration: none;
 }
 
 .social-container {
@@ -147,7 +171,6 @@ background: #0064bf;
 .social-container.linkedin:hover .social-cube .bottom{
 background: #0056a1;
 }
-
 
 
 @media only screen and (max-width: 800px) {
