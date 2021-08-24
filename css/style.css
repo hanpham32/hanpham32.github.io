@@ -20,7 +20,10 @@ nav {
 
 .nav-links {
 	list-style: none;
-	display: inline-flex;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 
 .nav-link {
@@ -39,17 +42,12 @@ nav {
 	text-decoration: none;
 }
 
-.dropdown-panel{
-	display: none;
-}
-
 main {
 	margin-top: 5px;
 	position: relative;
 }
 
 .content {
-	
 	display: flex;
 	justify-content: center;
 }
@@ -177,20 +175,29 @@ background: #0056a1;
 }
 
 
-@media only screen and (max-width: 800px) {
-	#ProfilePic {
+@media only screen and (max-width: 900px) {
+	.column.two {
 		display: none;
 	}
 }
 
 @media only screen and (max-width: 700px) {
+
 	header{
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		height: 20px;
 		padding-top: 0px;
-		padding-right: 50px;
 	}
+	
+	.nav-link {
+		font-size: 100%;
+	}
+
+	#greet {
+		margin-top: 0px;
+	}
+
 	h1 {
 		font-size: 34px;
 		color: #FFFFFF;
@@ -203,15 +210,15 @@ background: #0056a1;
 		width: 80%;
 	}
 
-	.column.two {
-		display: none;
-	}
-
 	.social-container {
+		width: 80px;
+		height: 20px;
+		font-size: 17px;
+	}
+	.social-container .social-cube .bottom {
 		display: none;
+		/* -webkit-transform: rotateX(-90deg) translateZ(10px);
+				transform: rotateX(-90deg) translateZ(10px); */
 	}
 
-	nav {
-		display: none;
-	}
 }
